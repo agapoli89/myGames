@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papier Kamien Nożyce</title>
+    <link rel="stylesheet" href="paper_stone_scissors.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>PAPIER, KAMIEŃ, NOŻYCE</h1>
+        <div class="select">
+            <h3 class="choose">Wybierz obraz:</h3>
+            <img data-option="papier" class="first" src="img/paper.png" alt="" title="Papier">
+            <img data-option="kamień" src="img/rock.png" alt="" title="Kamień">
+            <img data-option="nożyce" src="img/scissors.png" alt="" title="Nożyce">
+        </div>
+        <button class="start">ZAGRAJ!</button>
+        <div class="panel-left">
+            <h3>WYNIK GRY:</h3>
+            <p>Twój wybór: <span data-summary="your-choice"></span></p>
+            <p>Wybór komputera: <span data-summary="ai-choice"></span></p>
+            <h2>Zwycięzca gry: <span data-summary="who-win"></span></h2>
+        </div>
+        <div class="panel-right">
+            <h3>PEŁNE WYNIKI:</h3>
+            <p class="numbers">liczba gier: <span>0</span></p>
+            <p class="wins">wygranych: <span>0</span></p>
+            <p class="losses">przegranych: <span>0</span></p>
+            <p class="draws">remisów: <span>0</span></p>
+        </div>
+    </div>
+
+    <script src="paper_stone_scissors.js"></script>
+</body>
+
+</html>
