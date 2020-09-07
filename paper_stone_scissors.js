@@ -53,6 +53,12 @@ const showResults = () => {
     document.querySelector('[data-summary="who-win"]').textContent = game.whoWin;
 }
 
+//zakończenie gry
+const endGame = () => {
+    document.querySelector(`[data-option="${game.yourChoice}"]`).style.boxShadow = '';
+    game.yourChoice = '';
+    game.aiChoice = '';
+}
 
 //funkcja sterująca
 const startGame = () => {
@@ -68,6 +74,7 @@ const startGame = () => {
     game.whoWin = gameResult;
 
     showResults();
+    endGame();
 }
 
 hands.forEach(hand => hand.addEventListener('click', handSelection));
