@@ -17,7 +17,6 @@ const btn = document.querySelector('.start');
 //pierwsza funkcja - wybór gracza
 const handSelection = (e) => {
     game.yourChoice = e.target.dataset.option;
-    console.log(game.yourChoice);
     hands.forEach(hand => hand.style.boxShadow = '');
     e.target.style.boxShadow = '0 0 0 4px yellow';
 }
@@ -68,7 +67,6 @@ const startGame = () => {
 
     gameSummary.numbers++;
     game.aiChoice = aiHandSelection();
-    console.log(game.aiChoice);
 
     const gameResult = checkResult(game.yourChoice, game.aiChoice);
     game.whoWin = gameResult;
