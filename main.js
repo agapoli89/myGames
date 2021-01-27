@@ -33,7 +33,7 @@ const checkResult = (player, ai) => {
     if (player === ai) {
         gameSummary.draws++;
         return 'Remis';
-    } else if ((player === 'papier' && ai === 'kamień') || (player === 'kamień' && ai === 'nożyczki') || (player === 'nożyczki' && ai === 'papier')) {
+    } else if ((player === 'papier' && ai === 'kamień') || (player === 'kamień' && ai === 'nożyce') || (player === 'nożyce' && ai === 'papier')) {
         gameSummary.wins++;
         return 'Ty! :)';
     } else {
