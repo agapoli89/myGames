@@ -17,10 +17,11 @@ const btn = document.querySelector('.start');
 //pierwsza funkcja - wybór gracza
 const handSelection = (e) => {
     game.yourChoice = e.target.dataset.option;
-    hands.forEach(hand => hand.style.boxShadow = '');
-    e.target.style.boxShadow = '0 0 0 4px yellow';
+    /* hands.forEach(hand => hand.style.boxShadow = '');
+    e.target.style.boxShadow = '0 0 0 4px yellow'; */
+    hands.forEach(hand => hand.style.border = '');
+    e.target.style.border = "2px solid yellow";
 }
-
 //druga funkcja - wybór komputera
 const aiHandSelection = () => {
     const index = Math.floor(Math.random() * hands.length);
